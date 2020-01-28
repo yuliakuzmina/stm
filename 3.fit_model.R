@@ -23,7 +23,7 @@ plot(storage)
 saveRDS(storage, file = "intermediate_data/storage2406.RDS")
 storage <- readRDS(file = "/Users/yuliyakuzmina/Documents/R/integrum_sex_ed/intermediate_data/storage.RDS")
 
-# k 20 seems to suit best
+# k 20 seems to fit best
 cov_fed_20 <- stm(documents = out$documents, vocab = out$vocab,
                   K = 20, prevalence =~fed,
                   max.em.its = 100, data = out$meta,
